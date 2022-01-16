@@ -16,3 +16,6 @@ error[E0308]: mismatched types
 
 '''
 This error is because if different String to $str (C++ basis)
+ 
+ I will be posted this in my new [youtube](https://youtu.be/ho_WaC26AqQ) channel
+ 
