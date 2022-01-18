@@ -2,15 +2,17 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 mod sencond;
+mod third;
 
 /*Si recuerdo C++ la librería std io es para input - output, wow! */ 
 fn main() {
-        //primeraClase();
-        sencond::main();
+        //primera_clase();
+        //sencond::main();
+        third::main();
     }
     //Aqui en lugar de IF utilizo la función comparación "match"
     //Donde comparo guess con Secret_number
-    fn primeraClase(){
+    fn primera_clase(){
         println!("Adivina el numerito!");
     let secret_number = rand::thread_rng().gen_range(1..10);
     //println!(type(secret_number));
