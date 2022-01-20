@@ -16,3 +16,4 @@ fn calculate_length(s: String) -> (String, usize, u8) {
     let minum: u8 = s.trim().as_bytes()[2]; //como hacer parar un u32 char
     (s, length, minum)
 }
+

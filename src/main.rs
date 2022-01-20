@@ -3,12 +3,14 @@ use rand::Rng;
 use std::cmp::Ordering;
 mod sencond;
 mod third;
+mod forth;
 
 /*Si recuerdo C++ la librería std io es para input - output, wow! */ 
 fn main() {
         //primera_clase();
         //sencond::main();
-        third::main();
+        //third::main();
+        forth::main();
     }
     //Aqui en lugar de IF utilizo la función comparación "match"
     //Donde comparo guess con Secret_number
