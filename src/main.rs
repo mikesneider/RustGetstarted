@@ -4,13 +4,14 @@ use std::cmp::Ordering;
 mod sencond;
 mod third;
 mod forth;
-
+mod fifth;
 /*Si recuerdo C++ la librería std io es para input - output, wow! */ 
 fn main() {
         //primera_clase();
         //sencond::main();
         //third::main();
-        forth::main();
+        //forth::main();
+        fifth::main();
     }
     //Aqui en lugar de IF utilizo la función comparación "match"
     //Donde comparo guess con Secret_number
