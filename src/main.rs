@@ -5,13 +5,19 @@ mod sencond;
 mod third;
 mod forth;
 mod fifth;
+mod six_match;
+mod seven_consice;
+mod eight_crates;
 /*Si recuerdo C++ la librería std io es para input - output, wow! */ 
 fn main() {
         //primera_clase();
         //sencond::main();
         //third::main();
         //forth::main();
-        fifth::main();
+        //fifth::main();
+        //six_match::main();
+        seven_consice::main();
+        eight_crates::main();
     }
     //Aqui en lugar de IF utilizo la función comparación "match"
     //Donde comparo guess con Secret_number

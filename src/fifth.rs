@@ -11,9 +11,20 @@
 enum contadores {
     v1(String),
     v10(String),
-    v20(String)
+    v20(u32)
+}
+
+//este enum existe por Default, el enum  Option<T>
+enum Option<T> {
+    None,
+    Some(T)
 }
 pub fn main(){
+
+    let some_number = Some(5);
+    let some_text = Some("MIke");
+    //let some_abscence: Option<i32> = None;
+    println!("some number {:?}",some_number);
 
     let user1 = User {
         active: true,
@@ -34,7 +45,7 @@ pub fn main(){
         username: String::from("Peluchin"),
         email: String::from("Peluchin@gmail.com"),
         sign_in_count: 20,
-        count: contadores::v20(String::from("el valor v20"))
+        count: contadores::v20(326)
     };
     println!("{}",user2.username);
     //println!("rect1 is {:?}", user2);
