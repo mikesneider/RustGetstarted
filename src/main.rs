@@ -1,6 +1,8 @@
-use std::io;
+//use std::io;
 use rand::Rng;
-use std::cmp::Ordering;
+//use std::cmp::Ordering;
+use std::{cmp::Ordering, io};
+
 mod sencond;
 mod third;
 mod forth;
@@ -8,6 +10,7 @@ mod fifth;
 mod six_match;
 mod seven_consice;
 mod eight_crates;
+mod nine;
 /*Si recuerdo C++ la librería std io es para input - output, wow! */ 
 fn main() {
         //primera_clase();
@@ -16,8 +19,9 @@ fn main() {
         //forth::main();
         //fifth::main();
         //six_match::main();
-        seven_consice::main();
-        eight_crates::main();
+        //seven_consice::main();
+        //eight_crates::main();
+        nine::main();
     }
     //Aqui en lugar de IF utilizo la función comparación "match"
     //Donde comparo guess con Secret_number
