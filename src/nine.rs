@@ -1,22 +1,37 @@
-/*use front_of_house::hosting;
-//by default a all path are absolutes, 
-//so if you want to use a relative path, you have to use the "use" keyword
-
-mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist(a1: String ) {
-            println!("Añadiendo a la lista de espera: {}", a1);
-        }
-    }
-}
-
-pub fn eat_at_restaurant() {
-    hosting::add_to_waitlist("Pepito".to_string());
-    hosting::add_to_waitlist("Ana".to_string());
-    hosting::add_to_waitlist("Juan".to_string());
-}
-*/
+//about Collections
 
 pub fn main(){
-    
+    let vec1:Vec<u32> = vec![1,2,3];
+    let mut vec2:Vec<i16> = Vec::new();
+    //println!("{:?}",vec1);
+    vec2.push(5);
+    vec2.push(6);
+    vec2.push(7);
+    vec2.push(8);
+    println!("long del vect: {}",vec2.len());
+
+    let tercero:&i16 = &vec2[3];
+    println!("el valor tercero: {}",tercero);
+
+    match vec2.get(4){
+        Some(x) => println!("el valor es: {}", x),
+        None => println!("el indice está por fuera de rango")
+    }
+
+    //si lo recorro sin el & no puedo utilizar a vec2 después
+   /* for x in vec2 {
+        println!("el valor es: {}", x);
+    }*/
+
+    for x in &vec2 {
+        print!("el v es: {}\n", &x);
+    }
+
+    for x in &mut vec2 {
+        *x *= 2;
+        //println!("{}",*x);
+    }
+
+    println!("p prn de v: {:?}", vec2);
+
 }
